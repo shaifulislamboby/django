@@ -70,7 +70,7 @@ from .models import (
     TimeData,
     UniqueAnchor,
     UUIDData,
-    UUIDDefaultData,
+    UUIDDefaultData, TextPKData,
 )
 from .tests import register_tests
 
@@ -387,7 +387,7 @@ The end.""",
     (pk_obj, 750, SmallPKData, 12),
     (pk_obj, 751, SmallPKData, -12),
     (pk_obj, 752, SmallPKData, 0),
-    # (pk_obj, 760, TextPKData, """This is a long piece of text.
+    (pk_obj, 760, TextPKData, """This is a long piece of text.
     # It contains line breaks.
     # Several of them.
     # The end."""),
